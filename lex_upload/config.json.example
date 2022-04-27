@@ -1,0 +1,7 @@
+{
+    "api_key":"xxx",
+    "202":"upload/202/",
+    "4xx":"upload/4xx/",
+    "upload":"upload/",
+    "corrupt":"upload/corrupt/"
+}

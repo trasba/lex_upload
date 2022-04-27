@@ -1,0 +1,7 @@
+config.json
+example_curl.md
+upload/*
+*.pdf
+*.log
+*.pyc
+testing*
