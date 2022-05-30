@@ -41,7 +41,11 @@ def filewatcher(path_to_watch = '', callback = prt_filepath):
 
     while 1:
         time.sleep (1)
-        after = dict ([(f, None) for f in os.listdir (path_to_watch)])
+        try:
+            after = dict ([(f, None) for f in os.listdir (path_to_watch)])
+        except BaseException as err:
+            logger.error(str(err))
+            after = before
         added = [f for f in after if not f in before]
         #  removed = [f for f in before if not f in after]
         if added:
